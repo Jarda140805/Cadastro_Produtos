@@ -3,7 +3,6 @@ session_start();
 include_once("conexao.php");
 $idProduto = filter_input(INPUT_GET, 'idProduto', FILTER_SANITIZE_NUMBER_INT);
 
-
 if(!empty($idProduto)){
 	$result_produt = "DELETE FROM tbprodutos WHERE idProduto='$idProduto'";
 	$resultado_produt = mysqli_query($conn, $result_produt);

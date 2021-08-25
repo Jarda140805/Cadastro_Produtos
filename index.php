@@ -10,7 +10,6 @@
 
 	<a href="cadastrar.php">Cadastrar</a>
 	<a href="listar.php">Listar</a>
-	<a href="modificar.php">Modificar</a>
 
 
 </body>

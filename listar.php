@@ -7,7 +7,7 @@
 <html lang="pt_br">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Lista</title>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
 			unset($_SESSION['msg']);
 		}
 
-		
+
 
 		$result_produtos = "SELECT * FROM tbprodutos";
 		$resultado_produtos = mysqli_query($conn, $result_produtos);
@@ -30,7 +30,8 @@
 			
 			echo "Nome do produto: ".$row_usuario ['nomeProduto']."<br>";
 			echo "É Perecível? ".$row_usuario ['produtoPerecivel']."<br>";
-			echo "Origem do Produto: ".$row_usuario ['origemProduto']."<br><hr>";
+			echo "Origem do Produto: ".$row_usuario ['origemProduto']."<br>";
+			echo "<a href='modificar.php?idProduto=". $row_usuario ['idProduto'] . "'>Editar</a><br><hr>";
 		}
 	?>
 

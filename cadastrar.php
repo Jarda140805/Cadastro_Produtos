@@ -6,7 +6,7 @@
 <html lang="pt_br">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Cadastro</title>
 </head>
 <body>
 
@@ -28,14 +28,14 @@
 		<input type="radio" name="produtoPerecivel" value="S"> Perecível<br>
 		<input type="radio" name="produtoPerecivel" value="N"> Não Perecível<br>
 		<label>Origem do Produto: </label>
-		<select class="form-group col-2" name="origemProduto"><br>
+		<select class="form-group col-2" name="origemProduto">
 			<option value="RN">RN</option>
 			<option value="PB">PB</option>
 			<option value="CE">CE</option>
 			<option value="PE">PE</option>
 			<option value="BA">BA</option>
 			<option value="PI">PI</option>
-			<br>
+		</select><br><br>
 		<input type="submit" name="" value="Cadastrar">
 	</form>
 

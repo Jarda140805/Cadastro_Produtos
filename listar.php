@@ -31,7 +31,11 @@
 			echo "Nome do produto: ".$row_usuario ['nomeProduto']."<br>";
 			echo "É Perecível? ".$row_usuario ['produtoPerecivel']."<br>";
 			echo "Origem do Produto: ".$row_usuario ['origemProduto']."<br>";
-			echo "<a href='modificar.php?idProduto=". $row_usuario ['idProduto'] . "'>Editar</a><br><hr>";
+			echo "<a href='modificar.php?idProduto=". $row_usuario ['idProduto'] . "'>Editar</a><br>";
+			echo "<a href='processa_apagar.php?idProduto=". $row_usuario ['idProduto'] . "'>Deletar</a><br><hr>";
+			
+
+
 		}
 	?>
 

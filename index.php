@@ -2,7 +2,7 @@
 <html lang="pt_br">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Inicio</title>
 </head>
 <body>
 

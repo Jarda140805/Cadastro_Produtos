@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -9,7 +13,14 @@
 	<h1>Cadastre seu Produto</h1>
 
 	<a href="index.php">Voltar</a><br><br><br>
+<?php
 
+	if(isset($_SESSION['msg'])){
+		echo $_SESSION['msg'];
+		unset($_SESSION['msg']);
+	}
+
+?>
 	<form method="POST" action="processa.php">
 		<label>Nome do produto: </label>
 		<input type="text" name="nomeProduto"><br>
